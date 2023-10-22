@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+
+<body>
+    Pais de origem: <input type="text" name="nac" id="nac">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res1">Resultado: </div>
+    <script>
+        function calcular(){
+            var nac1 = window.document.getElementById('nac')
+            var nacr = String(nac1.value)
+            var res = window.document.getElementById('res1')
+                if (nacr == 'Brasil'){
+                res.innerHTML = `<p>Você é Brasileiro!</p>`
+                }
+                else{
+                res.innerHTML = `<p>Você é Estrangeiro!</p>`
+                }
+
+        }
+    </script>
+    
+</body>
+</html>

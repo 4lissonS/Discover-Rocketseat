@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+<style>
+    body {
+        background-color: aqua;
+        color: black;
+        font: normal 19pt arial;
+        
+    }
+</style>
+</head>
+<body>
+    <h1>iniciando trabalhos com DOM</h1>
+    <p>Teste de paragrafo e <strong>preparativo</strong> para próxima aula</p>
+    <p>Aqui para resultado</p>
+    <div id="msg"> Click aqui</div>
+    <script>
+        /*var p1 = window.document.getElementsByTagName("p")[0]//pegar paragrafos do documento [local]
+        window.document.write(p1.innerText)//reescreve o paragrafo selecionado sem formatação (innerHTML c/ formatação)
+        p1.style.color = "blue" 
+        var d = window.document.getElementById("msg")*/
+        var d = window.document.querySelector("div#msg")//id = #  / Classe = .
+        d.style.color = "green"
+
+    </script>
+</body>
+</html>
